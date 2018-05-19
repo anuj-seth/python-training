@@ -1,0 +1,26 @@
+Intro to Python:
+      History and Philosophy of Python
+      Why Python?
+      Interactive Mode
+      Execute a Script
+      Structuring with Indentation
+      Data Types and Variables
+Loops and statements:
+      Conditional Statements
+      While Loops
+      For Loops
+Complex Data Types:
+      Sequential Data Types
+      Dictionaries
+      Sets and Frozen Sets
+Functions:
+      Defining functions
+      Recursion and Recursive Functions
+Organizing Your Code:
+      Namespaces and Modules
+Miscellaneous Topics:
+      Introduction to Regular Expressions
+      Exception Handling
+Object Oriented Programming:
+      Classes and Class Creation
+      Inheritance Example

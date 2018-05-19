@@ -1,0 +1,4 @@
+{
+  "directions.py::test_directions": true,
+  "test_line_parser.py::test_line_parser": true
+}
