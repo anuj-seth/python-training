@@ -1413,8 +1413,21 @@ print "Great, you successfully entered an integer!"
             <p>Exceptions</p>
           </font>
           <pre><code data-sample="code/multi_except.py">
-            </code>
+          </code>
           </pre>
+        </section>
+
+        <section>
+            <h2>Object Oriented Programming</h2>
+            <ul>
+                <li>The genesis</li>
+                <li>An Object encapsulates information and operations</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Object Oriented Programming</h2>
+            <img src="resources/images/balance_object.png">
         </section>
 
         <section>
@@ -1451,52 +1464,81 @@ print "Great, you successfully entered an integer!"
 ...    pass
 
 &gt&gt&gt r = Robot()
-
             </code>
           </pre>
+        </section>
+
+        <section>
+            <font size="5">
+                <p>OOP</p>
+            </font>
+            <ul>
+                <li>We want our robots to have the following abilities</li>
+                <ul>
+                    <li>Store the type - 2 wheeled or 4 wheeled</li>
+                    <li>Report if the battery is low</li>
+                    <li>Update the value of battery left when asked to do so</li>
+                </ul>
+            </ul>
         </section>
 
         <section>
           <font size="5">
             <p>OOP</p>
           </font>
-          <pre><code data-sample="code/robots.py#1-17">
+          <pre>
+              <code data-trim data-sample="code/robots_1.py#1-12">
             </code>
           </pre>
-          <pre><code data-trim>
-# if you put the code in a file calles robots.py
+        </section>
+
+        <section>
+            <font size="5">
+                <p>OOP</p>
+            </font>
+            <pre><code data-trim>
+# if you put the code in a file called robots.py
 &gt&gt&gt import robots
 &gt&gt&gt r = robots.Robot('4-wheeled')
             </code>
-          </pre>
+            </pre>
 
         </section>
 
         <section>
-          <font size="5">
-            <p>OOP</p>
-          </font>
-          <pre><code data-trim>
-# now our company came out with a walking robot             
-                     </code>
-          </pre>
-
-          <pre><code data-sample="code/robots.py#19-21">
-            </code>
-          </pre>
+            <font size="5">
+                <p>OOP</p>
+            </font>
+            <ul>
+                <li>We further want our robots to report the number of wheels</li>
+            </ul>
         </section>
 
         <section>
-          <font size="5">
-            <p>OOP</p>
-          </font>
-          <pre><code data-trim>
-# since the walking robots consume more power
-# battery level below 60 is considered low
-                     </code>
-          </pre>
+            <font size="5">
+                <p>OOP</p>
+            </font>
+            <pre>
+                <code data-trim data-sample="code/robots_2.py#1-14">
+                </code>
+            </pre>
+        </section>
 
-          <pre><code data-sample="code/robots.py#19-24">
+        <section>
+            <font size="5">
+                <p>OOP</p>
+            </font>
+            <ul>
+                <li>The company now started making bi-pedal robots</li>
+                <li>BiPedal robots consume more power and have a different low battery threshold</li>
+            </ul>
+        </section>
+
+        <section>
+            <font size="5">
+                <p>OOP</p>
+            </font>
+          <pre><code data-sample="code/robots_3.py#19-24">
             </code>
           </pre>
         </section>
@@ -1515,10 +1557,23 @@ False
 &gt&gt&gt b.charge_battery(41)
 &gt&gt&gt b.is_battery_low()
 True
-            </code>
+# can you guess what happens if you try to
+# get the number of wheels of a bi-pedal robot ?
+          </code>
           </pre>
         </section>
 
+        <section>
+            <h4>Hierarchies</h4>
+            <h3>Inheritance</h3>
+            <img src="resources/images/inheritance_hierarchy.png">
+        </section>
+
+        <section>
+            <h4>Hierarchies</h4>
+            <h3>Composition</h3>
+            <img src="resources/images/composition_hierarchy.png">
+        </section>
 
         <section>
           <h2>Generators</h2>
@@ -2137,7 +2192,7 @@ if not (a and b):
          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
          { src: 'reveal.js/plugin/notes/notes.js', async: true },
          //{ src: 'plugin/math/math.js', async: true },
-         { src: 'reveal.js/plugin/reveal-sampler/sampler.js'}
+         { src: 'reveal.js/plugin/reveal-sampler-master/sampler.js'}
      ]
  });
 
